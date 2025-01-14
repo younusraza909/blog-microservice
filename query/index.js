@@ -54,7 +54,7 @@ app.listen(4002, () => {
   console.log("Query service listening on 4002");
 
   // Fetch all events from event-bus
-  axios.get("http://localhost:4005/events").then((res) => {
+  axios.get("http://event-bus-clusterip-srv:4005/events").then((res) => {
     for (let event of res.data) {
       console.log("Processing event:", event.type);
 
