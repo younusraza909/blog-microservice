@@ -21,20 +21,20 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: query-srv
+                name: query-clusterip-srv
                 port:
                   number: 4002
           - path: /posts/?(.*)/comments
             pathType: ImplementationSpecific
             backend:
               service:
-                name: comments-srv
+                name: comments-clusterip-srv
                 port:
                   number: 4001
           - path: /?(.*)
             pathType: ImplementationSpecific
             backend:
               service:
-                name: client-srv
+                name: client-clusterip-srv
                 port:
                   number: 3000
