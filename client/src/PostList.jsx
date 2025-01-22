@@ -9,7 +9,7 @@ const PostList = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get("http://localhost:4002/posts");
+        const response = await axios.get("http://posts.com:32072/posts");
         setPosts(response.data);
       } catch (error) {
         console.error("Error fetching posts:", error);
