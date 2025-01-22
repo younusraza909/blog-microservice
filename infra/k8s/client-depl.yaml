@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: younusraza909/
+          image: younusraza909/client
 
 ---
 apiVersion: v1
